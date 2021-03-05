@@ -1,0 +1,19 @@
+@mixin margin {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blocpage_index {
+    & .nav__child:nth-of-type(1) {
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+    & #welcome {
+        @include margin();
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+    }
+}
