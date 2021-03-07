@@ -12,6 +12,14 @@ header {
     height: 100px;
     & h1 {
         margin-left: 50px;
+        & a {
+            text-decoration: none;
+            color: black;
+            &:visited {
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
     & ul {
         display: flex;
@@ -26,6 +34,10 @@ header {
                 text-decoration: none;
                 color: black;
             }
+            &:hover {
+                border-bottom: 2px solid black;
+                padding-bottom: 5px;
+            }
         }
     }
 }
@@ -35,31 +47,36 @@ aside {
     margin: auto;
 }
 
-article {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & figure {
+.blocpage__index {
+    & li:nth-of-type(1) {
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+    article {
         margin: 0;
-        width: 70%;
         display: flex;
-        height: 400px;
-        background-color: lime;
-        margin-top: 50px;
-        & img {
-            background-color: mediumaquamarine;
-            width: 50%;
-            object-fit: cover;
-        }
-        & figcaption {
-            background-color: pink;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 50px;
-        }
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+figure {
+    margin: 0;
+    width: 70%;
+    display: flex;
+    height: 400px;
+    margin-top: 50px;
+    & img {
+        width: 50%;
+        object-fit: cover;
+    }
+    & figcaption {
+        background-color: #f2f2f2;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
     }
 }
 
@@ -73,4 +90,7 @@ footer {
     justify-content: center;
 }
 
-@import "queries"
+@import "projet";
+@import "propos";
+@import "cv";
+@import "queries";

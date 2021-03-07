@@ -1,0 +1,16 @@
+.blocpage__cv {
+    & li:nth-of-type(2) {
+        border-bottom: 2px solid black;
+        padding-bottom: 5px;
+    }
+    & article {
+        width: 70%;
+        margin: auto;
+        & p {
+            padding-left: 20px;
+        }
+    }
+    & h4 {
+        text-decoration: underline;
+    }
+}

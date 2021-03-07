@@ -1,4 +1,5 @@
 @media screen and (max-width: 767px) {
+    //telephone classique
     header {
         display: flex;
         flex-direction: column;
@@ -20,6 +21,7 @@
             display: flex;
             flex-direction: column;
             width: 80%;
+            height: 400px;
             & img {
                 width: 100%;
                 height: 40%;
@@ -34,6 +36,41 @@
         .figure__impaire {
             display: flex;
             flex-direction: column-reverse;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    //iphone 5
+    .blocpage__cv {
+        & aside {
+            width: 90%;
+        }
+        & article {
+            width: 90%;
+            & p {
+                padding: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    //tablette
+    figure {
+        height: 200px;
+        & figcaption {
+            padding: 0;
+        }
+    }
+    .blocpage__projet {
+        & figure {
+            & img {
+                height: 60%;
+            }
+            & figcaption {
+                height: 40%;
+            }
         }
     }
 }
