@@ -2,46 +2,67 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #c9c9c9;
 }
 
 header {
+  background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 100px;
 }
-header div {
-  padding-left: 50px;
+header p {
+  margin-left: 25px;
 }
 header ul {
   display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  width: 400px;
-  height: auto;
-  padding-right: 50px;
+  list-style-type: none;
 }
-header a {
+header ul li {
+  margin-right: 25px;
+}
+header ul a {
+  text-decoration: none;
+  color: black;
+}
+header ul a:visited {
   text-decoration: none;
   color: black;
 }
 
-.blocpage_index .nav__child:nth-of-type(1) {
-  border-bottom: 2px solid black;
-  padding-bottom: 5px;
-}
-.blocpage_index #welcome {
-  margin: 0px;
-  padding: 0px;
+article {
+  margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+article figure {
+  margin: 0;
   width: 70%;
-  margin: auto;
+  display: flex;
+  height: 400px;
+  background-color: lime;
+  margin-top: 50px;
+}
+article figure img {
+  background-color: mediumaquamarine;
+  width: 50%;
+  object-fit: cover;
+}
+article figure figcaption {
+  background-color: pink;
+  width: 50%;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #f2f2f2;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
